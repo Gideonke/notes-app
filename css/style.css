@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: open sans;
+}
+:root {
+  --primary-color: #f5f5dc;
+  --secondary-color: #f3e5ab;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+body {
+  font-family: open sans, sans-serif;
+  background-color: var(--primary-color);
+}
+.notes-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.note-card{
+    width: 200px;
+    height: 200px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+
+
+}
+.new__note {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.new__note:hover {
+  border: 3px dashed var(--secondary-color);
+  background-color: var(--primary-color);
+  transform: translateY(-5px);
+
+}
+.new__note span:first-child {
+  font-size: 2rem;
+}
+
+.note{
+   text-align: center;
+   position: relative;
+}
+.note:hover i{
+  display: block;
+}
+.note textarea{
+    height: 100%;
+    width: 100%;
+resize: none;
+background-color: transparent;
+padding: 1rem;
+}
+
+.note i {
+  color: red;
+  display: none;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  cursor: pointer;
+  
+}
